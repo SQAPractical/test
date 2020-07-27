@@ -18,6 +18,9 @@ Feature: Smoke steps
     Then element with xpath "//input[@id='sb_form_q']" should be present
     When I type "Behavior Driven Development" into element with xpath "//input[@id='sb_form_q']"
     Then I click on element with xpath "//label[@class='search icon tooltip']//*[local-name()='svg']"
+    Then I wait for element with xpath "//div[@id='b_content']" to be present
+    Then element with xpath "//div[@id='b_content']" should contain text "Cucumber"
+    
 
 
     
